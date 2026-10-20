@@ -1,0 +1,36 @@
+version: 2
+updates:
+  - package-ecosystem: gradle
+    directory: /
+    schedule:
+      interval: weekly
+      day: monday
+    open-pull-requests-limit: 5
+    groups:
+      androidx:
+        patterns:
+          - androidx.*
+      kotlin-and-compose:
+        patterns:
+          - org.jetbrains.kotlin*
+          - androidx.compose.*
+      testing:
+        patterns:
+          - org.robolectric*
+          - io.github.takahirom.roborazzi*
+          - androidx.test.*
+    ignore:
+      # Compose BOM 2026.x requires AGP 9 / compileSdk 37.
+      - dependency-name: androidx.compose:compose-bom
+        versions:
+          - ">= 2026.0.0"
+      # Media3 1.11.x pulls Compose BOM 2026.05.
+      - dependency-name: androidx.media3:*
+        versions:
+          - ">= 1.11.0"
+
+  - package-ecosystem: github-actions
+    directory: /
+    schedule:
+      interval: monthly
+    open-pull-requests-limit: 3

@@ -1,0 +1,11 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Pertanyaan dan diskusi
+    url: https://github.com/ArchDityaa/KiraSave/discussions
+    about: Gunakan Discussions untuk pertanyaan umum, ide, atau bantuan penggunaan.
+  - name: Laporan keamanan
+    url: https://github.com/ArchDityaa/KiraSave/security/advisories/new
+    about: Laporkan kerentanan secara privat, jangan membuat Issue publik.
+  - name: Kontak pengembang
+    url: https://wa.me/6281553362795
+    about: WhatsApp untuk urusan yang tidak cocok menjadi Issue publik.

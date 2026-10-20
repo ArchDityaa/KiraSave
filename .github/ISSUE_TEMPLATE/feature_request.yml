@@ -1,0 +1,61 @@
+name: Feature request
+description: Usulkan fitur atau peningkatan untuk KiraSave
+title: "[Feature]: "
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Jelaskan masalah yang ingin diselesaikan, bukan hanya solusinya.
+        Fitur yang menambahkan iklan, tracking, login TikTok, atau konten privat tidak akan diterima.
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: Masalah yang ingin diselesaikan
+      placeholder: "Saat mengunduh banyak video, saya sulit ..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Usulan solusi
+    validations:
+      required: true
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatif yang sudah dipertimbangkan
+    validations:
+      required: false
+
+  - type: dropdown
+    id: area
+    attributes:
+      label: Area
+      options:
+        - Unduhan
+        - Antrean
+        - Koleksi
+        - Pemutar
+        - Tampilan
+        - Aksesibilitas
+        - Privasi
+        - Dokumentasi
+        - Lainnya
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: scope
+    attributes:
+      label: Batasan proyek
+      options:
+        - label: Fitur ini tidak membutuhkan iklan, analytics, atau layanan berbayar.
+          required: true
+        - label: Fitur ini tidak membutuhkan login atau konten privat TikTok.
+          required: true
+        - label: Saya bersedia membantu implementasi atau pengujian bila memungkinkan.
+          required: false

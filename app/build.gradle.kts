@@ -87,7 +87,7 @@ dependencies {
 
     implementation("androidx.datastore:datastore-preferences:1.1.7")
 
-    implementation("com.squareup.okhttp3:okhttp:4.12.0")
+    implementation("com.squareup.okhttp3:okhttp:5.5.0")
     implementation("io.coil-kt:coil-compose:2.7.0")
 
     implementation("androidx.media3:media3-exoplayer:1.10.1")

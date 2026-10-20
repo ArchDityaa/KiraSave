@@ -41,6 +41,10 @@ updates:
       - dependency-name: gradle-wrapper
         update-types:
           - version-update:semver-major
+          - version-update:semver-minor
+      - dependency-name: com.squareup.okhttp3:okhttp
+        update-types:
+          - version-update:semver-major
       # AndroidX 1.17+ minors require AGP 9 / compileSdk 37.
       - dependency-name: androidx.*
         update-types:
